@@ -20,7 +20,7 @@ const SearchBar = () => {
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
       )
     );
-  }, [searchTerm, posts]);
+  }, [searchTerm]);
 
   return (
     <div className="search-bar">

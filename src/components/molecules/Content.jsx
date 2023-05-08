@@ -27,10 +27,10 @@ export const Content = () => {
         </Col>
         <Col md={6}>
           <Row>
-            <Col md={4}>
+            <Col xs={12} md={4}>
               <img src="https://via.placeholder.com/150" alt="Post 1" />
             </Col>
-            <Col md={8}>
+            <Col xs={12} md={8}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dignissimos assumenda quas nostrum ducimus! Eveniet quos
@@ -40,13 +40,13 @@ export const Content = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={4}>
+            <Col xs={12} md={4}>
               <img src="https://via.placeholder.com/150" alt="Post 1" />
             </Col>
-            <Col md={4}>
+            <Col xs={12} md={4}>
               <img src="https://via.placeholder.com/150" alt="Post 2" />
             </Col>
-            <Col md={4}>
+            <Col xs={12} md={4}>
               <img src="https://via.placeholder.com/150" alt="Post 3" />
             </Col>
           </Row>
