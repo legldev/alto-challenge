@@ -26,11 +26,20 @@ export const Content = () => {
           </Row>
         </Col>
         <Col md={6}>
-          <Row>
-            <Col xs={12} md={4}>
-              <img src="https://via.placeholder.com/150" alt="Post 1" />
+          <Row className="mt-4">
+            <Col md={4}>
+              <img
+                src="https://via.placeholder.com/320x150"
+                alt="Post 1"
+                className="d-block d-md-none mb-3"
+              />
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Post 1"
+                className="d-none d-md-block"
+              />
             </Col>
-            <Col xs={12} md={8}>
+            <Col md={8}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dignissimos assumenda quas nostrum ducimus! Eveniet quos
@@ -39,15 +48,42 @@ export const Content = () => {
               </p>
             </Col>
           </Row>
-          <Row>
-            <Col xs={12} md={4}>
-              <img src="https://via.placeholder.com/150" alt="Post 1" />
+          <Row className="mt-4">
+            <Col md={4}>
+              <img
+                src="https://via.placeholder.com/320x150"
+                alt="Post 1"
+                className="d-block d-md-none mb-3"
+              />
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Post 1"
+                className="d-none d-md-block"
+              />
             </Col>
-            <Col xs={12} md={4}>
-              <img src="https://via.placeholder.com/150" alt="Post 2" />
+            <Col md={4}>
+              <img
+                src="https://via.placeholder.com/320x150"
+                alt="Post 2"
+                className="d-block d-md-none mb-3"
+              />
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Post 2"
+                className="d-none d-md-block"
+              />
             </Col>
-            <Col xs={12} md={4}>
-              <img src="https://via.placeholder.com/150" alt="Post 3" />
+            <Col md={4}>
+              <img
+                src="https://via.placeholder.com/320x150"
+                alt="Post 3"
+                className="d-block d-md-none mb-3"
+              />
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Post 3"
+                className="d-none d-md-block"
+              />
             </Col>
           </Row>
         </Col>
