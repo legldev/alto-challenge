@@ -20,7 +20,7 @@ const SearchBar = () => {
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
       )
     );
-  }, [searchTerm]);
+  }, [searchTerm, posts]);
 
   return (
     <div className="search-bar">
@@ -31,18 +31,16 @@ const SearchBar = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       {searchTerm && (
-        <div className="search-results">
-          {filteredPosts.map((post) => (
-            <Link to={`/post/${post.id}`}>
-              <div
-                key={post.id}
-                className="search-result"
-                onClick={() => setSearchTerm("")}
-              >
-                {post.title}
-              </div>
-            </Link>
-          ))}
+        <div className="search-results-container">
+          <ul className="search-results">
+            {filteredPosts.map((post) => (
+              <li key={post.id} className="search-result">
+                <Link to={`/post/${post.id}`} onClick={() => setSearchTerm("")}>
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

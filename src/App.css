@@ -69,15 +69,16 @@ body {
 }
 
 .search-results {
-  position: static;
+  position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  max-height: 200px;
-  background-color: #fff;
-  color: #282c34;
+  right: 0;
+  z-index: 1;
+  background-color: white;
   border: 1px solid #ccc;
   border-top: none;
+  padding: 0.5rem;
+  list-style: none;
 }
 
 .search-result {
@@ -86,5 +87,5 @@ body {
 }
 
 .search-result:hover {
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
 }
